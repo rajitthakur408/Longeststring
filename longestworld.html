@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//     To find longest word from a string using custom code
+// Hello my name is Ankit Jain & i'm from Morena
+
+//split the sentence into string and crate an array
+//then iterate a loop and find the each string length 
+//then find the greates number compare it with prvious greater number. 
+
+//------------------------------------------------------------------------------//
+// const text = "Hello my name is Ankit Jain & i'm from Morena"
+// const myArray = text.split(' ');
+// let lword = 0;
+
+// for(let i = 0; i < myArray.length; i++){
+//    if(myArray[i].length > 0){
+//       lword = myArray[i].length
+//    }
+// }
+// console.log(lword);
+//---------------------------------------------------------------------------//
+const text1 = "Hello my name is Ankit Jain & i'm from Morena"
+//first will iterate a loop through out all the struing 
+//whenever find the word will increase count by one 
+//whenever find the space will compare count with longest word and if it is greater then will move 
+//it to longest word variable then  intialize count with 0 
+// at the end will display the longest word variable
+//-----------------------------------------------------------------------------//
+//-------------------------- with object -------------------------------------//
+//split the sentence into string and crate an array
+//then iterate a loop and find the each string length 
+// then add it into our empty object count as a key and string as a value 
+// then i can find out the max count from the key along with value(string)
+
+const textA = 'my name is ankit i am from morena'
+const arr = textA.split(' ');
+let obj = {}
+for ( let i = 0; i<arr.length; i++){
+   obj[arr[i].length] = arr[i]
+}
+
+ let arrA = Object.keys(obj);
+ let max = Math.max(...arrA);
+
+ console.log(max, obj[max]);
+</script>
+</html>
